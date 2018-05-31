@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+  <title>lit-text demo</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      box-sizing: border-box;
+      font-size: 16px;
+      line-height: 2;
+      margin: 0;
+      padding: 10px;
+    }
+
+    h3,
+    p {
+      box-sizing: content-box;
+    }
+  </style>
+</head>
+
+<body>
+  <script type="module" src="../lit-text.js"></script>
+
+  <lit-text id="lit">
+    <div>
+      <h3>Headline</h3>
+      <p>This is some paragraph text</p>
+      <p>And this is some more text</p>
+    </div>
+  </lit-text>
+  <p>
+    <button onclick="startLit()">START</button>
+  </p>
+
+  <script>
+    function startLit() {
+      document.getElementById('lit').start(10000);
+    }
+  </script>
+</body>
+
+</html>

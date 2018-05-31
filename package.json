@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/pshihn/lit-text/issues"
   },
-  "homepage": "https://github.com/pshihn/lit-text#readme"
+  "homepage": "https://github.com/pshihn/lit-text#readme",
+  "dependencies": {
+    "@polymer/lit-element": "^0.5.1"
+  }
 }
