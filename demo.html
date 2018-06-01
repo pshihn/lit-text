@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+  <title>lit-text demo</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      box-sizing: border-box;
+      font-size: 16px;
+      line-height: 2;
+      margin: 0;
+      padding: 10px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      position: relative;
+    }
+
+    h3,
+    p {
+      margin: 0;
+      padding: 10px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <script type="module">
+    import { lumin } from './index.js';
+
+    document.querySelector('button').addEventListener('click', () => {
+      const container = document.querySelector('.container');
+      const luminator = lumin(container);
+      luminator.start(5000);
+    });
+  </script>
+
+  <div class="container">
+    <h3>Headline</h3>
+    <p>This is some paragraph text</p>
+    <p>And this is some more text</p>
+  </div>
+
+  <p>
+    <button>START</button>
+  </p>
+</body>
+
+</html>
